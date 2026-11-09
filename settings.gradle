@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+rootProject.name = 'NewmeriaServerCore'
+
+// NewmeriaCore is built from its sources in the sibling folder: no need to publish it anywhere,
+// and a change made there is picked up here on the next build.
+includeBuild('../NewmeriaCore') {
+    dependencySubstitution {
+        substitute module('fr.akkun.newmeriacore:newmeriacore') using project(':')
+    }
+}

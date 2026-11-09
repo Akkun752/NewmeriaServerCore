@@ -1,0 +1,32 @@
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Akkun"
+description='''
+Newmeria Season 2's server-side mod: homes, warps, /back and player name colors. Only installed on the server.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="newmeriacore"
+    type="required"
+    reason="Newmeria Server Core adds the server side of Newmeria on top of Newmeria Core."
+    versionRange="[0.1.1,)"
+    ordering="AFTER"
+    side="BOTH"

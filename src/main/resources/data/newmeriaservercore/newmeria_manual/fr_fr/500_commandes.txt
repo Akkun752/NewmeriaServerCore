@@ -1,0 +1,7 @@
+§lDe nouvelles commandes§r
+
+§1/sethome§r : définir son home
+§1/home§r : se téléporter à son home
+§1/delhome§r : Supprimer son home
+§1/back§r : revenir au lieu de sa mort
+§1/warp <nom>§r : aller à un warp

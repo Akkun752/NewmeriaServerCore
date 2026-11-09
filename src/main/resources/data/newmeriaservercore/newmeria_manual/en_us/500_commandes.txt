@@ -1,0 +1,7 @@
+§lNew commands§r
+
+§1/sethome§r: set your home
+§1/home§r: teleport to your home
+§1/delhome§r: delete your home
+§1/back§r: return to where you died
+§1/warp <name>§r: go to a warp
