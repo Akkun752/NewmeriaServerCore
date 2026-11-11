@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "fr.akkun.newmeriaservercore.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "ServerPlayerMixin",
+    "SleepStatusMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

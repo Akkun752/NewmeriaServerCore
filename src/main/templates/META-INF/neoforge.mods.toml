@@ -9,6 +9,9 @@ description='''
 Newmeria Season 2's server-side mod: homes, warps, /back and player name colors. Only installed on the server.
 '''
 
+[[mixins]]
+config="${mod_id}.mixins.json"
+
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
@@ -27,6 +30,6 @@ Newmeria Season 2's server-side mod: homes, warps, /back and player name colors.
     modId="newmeriacore"
     type="required"
     reason="Newmeria Server Core adds the server side of Newmeria on top of Newmeria Core."
-    versionRange="[0.1.1,)"
+    versionRange="[1.0.0,)"
     ordering="AFTER"
     side="BOTH"

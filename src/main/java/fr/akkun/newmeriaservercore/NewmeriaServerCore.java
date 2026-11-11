@@ -1,6 +1,7 @@
 package fr.akkun.newmeriaservercore;
 
 import com.mojang.logging.LogUtils;
+import fr.akkun.newmeriaservercore.admin.Vanish;
 import fr.akkun.newmeriaservercore.home.HomeAttachments;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -22,5 +23,6 @@ public class NewmeriaServerCore {
 
     public NewmeriaServerCore(IEventBus modEventBus, ModContainer modContainer) {
         HomeAttachments.register(modEventBus);
+        Vanish.register(modEventBus);
     }
 }
